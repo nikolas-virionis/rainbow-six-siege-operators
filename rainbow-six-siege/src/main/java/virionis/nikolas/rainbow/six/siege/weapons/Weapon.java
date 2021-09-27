@@ -1,21 +1,28 @@
 package virionis.nikolas.rainbow.six.siege.weapons;
 
+import java.util.ArrayList;
+
 import virionis.nikolas.rainbow.six.siege.attachments.*;
 
 public class Weapon implements IWeapon {
     private Integer damage;
     private Integer maxMagCapacity;
     private Integer magCapacity;
-    private Sight sight;
-    private UnderBarrel underBarrel;
-    private Barrel barrel;
-    private Grip grip;
+    private ArrayList<Sight> sightOptions;
+    private ArrayList<UnderBarrel> underBarrelOptions;
+    private ArrayList<Barrel> barrelOptions;
+    private ArrayList<Grip> gripOptions;
     private Integer adsTime;
 
-    public Weapon(Integer damage, Integer maxMagCapacity) {
+    public Weapon(Integer damage, Integer maxMagCapacity, ArrayList<Sight> sightOptions,
+            ArrayList<UnderBarrel> underBarrelOptions, ArrayList<Barrel> barrelOptions, ArrayList<Grip> gripOptions) {
         this.damage = damage;
         this.maxMagCapacity = maxMagCapacity;
         this.magCapacity = maxMagCapacity;
+        this.sightOptions = sightOptions;
+        this.underBarrelOptions = underBarrelOptions;
+        this.barrelOptions = barrelOptions;
+        this.gripOptions = gripOptions;
     }
 
     public Integer getDamage() {
@@ -30,20 +37,20 @@ public class Weapon implements IWeapon {
         return magCapacity;
     }
 
-    public Sight getSight() {
-        return sight;
+    public ArrayList<Sight> getSightOptions() {
+        return sightOptions;
     }
 
-    public UnderBarrel getUnderBarrel() {
-        return underBarrel;
+    public ArrayList<UnderBarrel> getUnderBarrelOptions() {
+        return underBarrelOptions;
     }
 
-    public Barrel getBarrel() {
-        return barrel;
+    public ArrayList<Barrel> getBarrelOptions() {
+        return barrelOptions;
     }
 
-    public Grip getGrip() {
-        return grip;
+    public ArrayList<Grip> getGripOptions() {
+        return gripOptions;
     }
 
     public Integer getAdsTime() {

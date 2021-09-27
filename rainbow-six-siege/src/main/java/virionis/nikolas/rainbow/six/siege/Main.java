@@ -3,12 +3,10 @@ package virionis.nikolas.rainbow.six.siege;
 import virionis.nikolas.rainbow.six.siege.operators.*;
 import virionis.nikolas.rainbow.six.siege.weapons.*;
 import virionis.nikolas.rainbow.six.siege.gadgets.*;
-import virionis.nikolas.rainbow.six.siege.gadgets.Throwable;
+import virionis.nikolas.rainbow.six.siege.attachments.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import virionis.nikolas.rainbow.six.siege.attachments.*;
 
 public class Main {
     public static void main(String[] args) {
