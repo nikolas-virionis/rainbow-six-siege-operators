@@ -1,12 +1,10 @@
 package virionis.nikolas.rainbow.six.siege.weapons;
 
-import virionis.nikolas.rainbow.six.siege.attachments.*;
 
 public class Shotgun extends Weapon {
 
-    public Shotgun(Integer damage, Integer maxMagCapacity, Sight sight, 
-            UnderBarrel underBarrel, Barrel barrel, Grip grip, Integer adsTime) {
-        super(damage, maxMagCapacity, sight, underBarrel, barrel, grip, adsTime);
+    public Shotgun(Integer damage, Integer maxMagCapacity) {
+        super(damage, maxMagCapacity);
     }
     
 }

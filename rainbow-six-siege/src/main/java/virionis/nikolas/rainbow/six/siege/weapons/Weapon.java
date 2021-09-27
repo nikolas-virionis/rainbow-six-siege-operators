@@ -2,37 +2,62 @@ package virionis.nikolas.rainbow.six.siege.weapons;
 
 import virionis.nikolas.rainbow.six.siege.attachments.*;
 
-public class Weapon implements IWeapon{
+public class Weapon implements IWeapon {
     private Integer damage;
-    private Integer maxMagCapacity;    
+    private Integer maxMagCapacity;
     private Integer magCapacity;
-    private Sight sight;    
+    private Sight sight;
     private UnderBarrel underBarrel;
     private Barrel barrel;
     private Grip grip;
     private Integer adsTime;
 
-    public Weapon(Integer damage, Integer maxMagCapacity, Sight sight, 
-            UnderBarrel underBarrel, Barrel barrel, Grip grip, Integer adsTime) {
+    public Weapon(Integer damage, Integer maxMagCapacity) {
         this.damage = damage;
         this.maxMagCapacity = maxMagCapacity;
         this.magCapacity = maxMagCapacity;
-        this.sight = sight;
-        this.underBarrel = underBarrel;
-        this.barrel = barrel;
-        this.grip = grip;        
-        this.adsTime = adsTime;
     }
 
-    
+    public Integer getDamage() {
+        return damage;
+    }
+
+    public Integer getMaxMagCapacity() {
+        return maxMagCapacity;
+    }
+
+    public Integer getMagCapacity() {
+        return magCapacity;
+    }
+
+    public Sight getSight() {
+        return sight;
+    }
+
+    public UnderBarrel getUnderBarrel() {
+        return underBarrel;
+    }
+
+    public Barrel getBarrel() {
+        return barrel;
+    }
+
+    public Grip getGrip() {
+        return grip;
+    }
+
+    public Integer getAdsTime() {
+        return adsTime;
+    }
+
     @Override
     public void shoot() {
-        
+
     }
 
     @Override
     public void aim() {
-        
+
     }
 
     @Override
@@ -42,7 +67,7 @@ public class Weapon implements IWeapon{
 
     @Override
     public void reload() {
-        
+
     }
-    
+
 }

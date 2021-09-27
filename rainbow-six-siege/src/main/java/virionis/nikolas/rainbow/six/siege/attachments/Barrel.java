@@ -9,15 +9,22 @@ package virionis.nikolas.rainbow.six.siege.attachments;
  *
  * @author USER
  */
-public class Barrel extends Attachment{
+public class Barrel extends Attachment {
     private Double damageMultiplier;
     private String recoilEffect;
+
+    public Double getDamageMultiplier() {
+        return damageMultiplier;
+    }
+
+    public String getRecoilEffect() {
+        return recoilEffect;
+    }
 
     public Barrel(Double damageMultiplier, String recoilEffect, String name) {
         super(name);
         this.damageMultiplier = damageMultiplier;
         this.recoilEffect = recoilEffect;
     }
-    
-    
+
 }

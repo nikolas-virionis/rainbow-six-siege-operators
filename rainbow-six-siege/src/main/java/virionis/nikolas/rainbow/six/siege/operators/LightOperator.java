@@ -1,5 +1,15 @@
 package virionis.nikolas.rainbow.six.siege.operators;
 
-public class LightOperator extends Operator{
-    
+import java.util.ArrayList;
+
+import virionis.nikolas.rainbow.six.siege.gadgets.*;
+import virionis.nikolas.rainbow.six.siege.weapons.*;
+
+public class LightOperator extends Operator {
+
+    public LightOperator(ArrayList<Weapon> primaryWeaponOptions, ArrayList<Weapon> secondaryWeaponOptions,
+            ArrayList<Gadget> gadgetOptions, Character side) {
+        super(100, 1, 3, primaryWeaponOptions, secondaryWeaponOptions, gadgetOptions, side);
+    }
+
 }
