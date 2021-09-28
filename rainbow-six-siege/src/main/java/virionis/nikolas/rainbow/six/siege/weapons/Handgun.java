@@ -6,12 +6,13 @@ import virionis.nikolas.rainbow.six.siege.attachments.*;
 
 public class Handgun extends Weapon {
 
-    public Handgun(Integer damage, Integer maxMagCapacity, ArrayList<Sight> sightOptions,
-            ArrayList<UnderBarrel> underBarrelOptions, ArrayList<Barrel> barrelOptions, ArrayList<Grip> gripOptions) {
-        super(damage, maxMagCapacity, sightOptions, underBarrelOptions, barrelOptions, gripOptions);
-    
+    public Handgun(String name, Integer damage, Integer maxMagCapacity,
+            ArrayList<Sight> sightOptions,
+            ArrayList<UnderBarrel> underBarrelOptions,
+            ArrayList<Barrel> barrelOptions, ArrayList<Grip> gripOptions,
+            Integer fireRate) {
+        super(name, damage, maxMagCapacity, sightOptions, underBarrelOptions,
+                barrelOptions, gripOptions, fireRate);
     }
 
-    
-    
 }

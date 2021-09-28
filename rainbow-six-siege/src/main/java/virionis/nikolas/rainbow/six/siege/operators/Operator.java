@@ -6,6 +6,9 @@ import virionis.nikolas.rainbow.six.siege.gadgets.*;
 import virionis.nikolas.rainbow.six.siege.weapons.*;
 
 public class Operator implements IOperator {
+
+    private String name;
+    private String unit;
     private Integer maxHp;
     private Integer hp;
     private Integer health;
@@ -18,9 +21,13 @@ public class Operator implements IOperator {
     private Gadget gadget;
     private Character side;
 
-    public Operator(Integer maxHp, Integer health, Integer speed, ArrayList<Weapon> primaryWeaponOptions,
+    public Operator(String name, String unit, Integer maxHp, Integer health,
+            Integer speed,
+            ArrayList<Weapon> primaryWeaponOptions,
             ArrayList<Weapon> secondaryWeaponOptions,
             ArrayList<Gadget> gadgetOptions, Character side) {
+        this.name = name;
+        this.unit = unit;
         this.maxHp = maxHp;
         this.hp = maxHp;
         this.health = health;
@@ -29,6 +36,10 @@ public class Operator implements IOperator {
         this.secondaryWeaponOptions = secondaryWeaponOptions;
         this.gadgetOptions = gadgetOptions;
         this.side = side;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Integer getMaxHp() {

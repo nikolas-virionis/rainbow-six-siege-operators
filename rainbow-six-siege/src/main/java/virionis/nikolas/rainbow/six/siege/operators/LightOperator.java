@@ -7,9 +7,12 @@ import virionis.nikolas.rainbow.six.siege.weapons.*;
 
 public class LightOperator extends Operator {
 
-    public LightOperator(ArrayList<Weapon> primaryWeaponOptions, ArrayList<Weapon> secondaryWeaponOptions,
+    public LightOperator(String name, String unit,
+            ArrayList<Weapon> primaryWeaponOptions,
+            ArrayList<Weapon> secondaryWeaponOptions,
             ArrayList<Gadget> gadgetOptions, Character side) {
-        super(100, 1, 3, primaryWeaponOptions, secondaryWeaponOptions, gadgetOptions, side);
+        super(name, unit, 100, 1, 3, primaryWeaponOptions,
+                secondaryWeaponOptions, gadgetOptions, side);
     }
 
 }
