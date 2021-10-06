@@ -336,5 +336,42 @@ public class Main {
                 new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
 
         // LMG
+        LMG lmg6p41 = new LMG("6P41", 46, 100,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2),
+                        defaultSights.get(3), scope15, acog)),
+                defaultUnderBarrels,
+                new ArrayList<Barrel>(
+                        Arrays.asList(defaultBarrels.get(0), defaultBarrels.get(2), defaultBarrels.get(4))),
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 680);
+        LMG g8 = new LMG(
+                "G8A1", 37, 50, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1),
+                        defaultSights.get(2), defaultSights.get(3), scope2, acog)),
+                defaultUnderBarrels, defaultBarrels, defaultGrips, 850);
+        LMG m249 = new LMG("M249", 48, 100,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2),
+                        defaultSights.get(3), scope2, acog)),
+                defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 650);
+        LMG t95 = new LMG(
+                "T-95", 46, 80, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1),
+                        defaultSights.get(2), defaultSights.get(3), scope2, acog)),
+                defaultUnderBarrels, defaultBarrels, defaultGrips, 650);
+        LMG lmgE = new LMG("LMG-E", 41, 150,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2),
+                        defaultSights.get(3), scope15, acog)),
+                defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 720);
+        LMG alda = new LMG("ALDA 5.56", 35, 80, defaultSights, defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 900);
+        LMG m249saw = new LMG("M249 SAW", 48, 60,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2),
+                        defaultSights.get(3), scope2, acog)),
+                defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 650);
+        LMG dp27 = new LMG("DP27", 49, 70,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(3))), defaultUnderBarrels,
+                defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 550);
+
+        // Handgun
     }
 }
