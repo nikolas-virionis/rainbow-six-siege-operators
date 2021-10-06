@@ -302,5 +302,39 @@ public class Main {
                 new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
 
         // MarksmanRifle
+        MarksmanRifle sn417 = new MarksmanRifle("417", 69, 20,
+                new ArrayList<Sight>(
+                        Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2), acog)),
+                defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 1);
+        MarksmanRifle ots03 = new MarksmanRifle("OTs-03", 71, 15,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))), defaultUnderBarrels,
+                new ArrayList<Barrel>(Arrays.asList(defaultBarrels.get(0), defaultBarrels.get(2), defaultBarrels.get(3),
+                        defaultBarrels.get(4))),
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        MarksmanRifle camrs = new MarksmanRifle("CAMRS", 69, 20,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2),
+                        defaultSights.get(3), acog)),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        MarksmanRifle sr25 = new MarksmanRifle("SR-25", 61, 20,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1), defaultSights.get(2),
+                        defaultSights.get(3), acog)),
+                defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 1);
+        MarksmanRifle mk14 = new MarksmanRifle(
+                "Mk 14 EBR", 60, 20, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1),
+                        defaultSights.get(2), defaultSights.get(3), acog)),
+                defaultUnderBarrels, defaultBarrels, defaultGrips, 1);
+        MarksmanRifle ar15 = new MarksmanRifle(
+                "AR-15.50", 62, 10, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0), defaultSights.get(1),
+                        defaultSights.get(2), defaultSights.get(3), acog)),
+                defaultUnderBarrels, defaultBarrels, defaultGrips, 1);
+        MarksmanRifle csrx300 = new MarksmanRifle("CSRX 300", 69, 20,
+                new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                new ArrayList<UnderBarrel>(Arrays.asList(defaultUnderBarrels.get(0))),
+                new ArrayList<Barrel>(Arrays.asList(defaultBarrels.get(0))),
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+
+        // LMG
     }
 }
