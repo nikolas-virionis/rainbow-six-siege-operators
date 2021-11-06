@@ -373,5 +373,64 @@ public class Main {
                 defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 550);
 
         // Handgun
+        Handgun p226 = new Handgun("P226 Mk 25", 50, 15, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun m45 = new Handgun("M45 MEUSOC", 58, 7, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun usg57 = new Handgun("5.7 USG", 42, 20, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun p9 = new Handgun("P9", 45, 16, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun lfp586 = new Handgun("LFP586", 78, 6, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, new ArrayList<Barrel>(Arrays.asList(defaultBarrels.get(0))),
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun gsh18 = new Handgun("GSh-18", 44, 18, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun pmm = new Handgun("PMM", 63, 8, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun p12 = new Handgun("P12", 45, 15, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun mk1 = new Handgun("MK1 9mm", 48, 13, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun deagle = new Handgun("D-50", 71, 7, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun prb92 = new Handgun("PRB92", 42, 15, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun luison = new Handgun("Luison", 65, 15, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, new ArrayList<Barrel>(Arrays.asList(defaultBarrels.get(4))),
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun p229 = new Handgun("P229", 50, 12, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun usp40 = new Handgun("P226 Mk 25", 48, 12, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun q929 = new Handgun("P226 Mk 25", 60, 10, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun rg15 = new Handgun("RG15", 38, 15, new ArrayList<Sight>(Arrays.asList(defaultSights.get(1))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun bailif = new Handgun("Bailiff 410", 35, 5, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun keratos = new Handgun("Keratos .357", 78, 6, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun tacops = new Handgun("1911 TACOPS", 55, 8, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun p10c = new Handgun("P-10C", 40, 15, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun mag44 = new Handgun(".44 Mag Semi-Auto", 54, 7, new ArrayList<Sight>(Arrays.asList(scope3)),
+                defaultUnderBarrels, new ArrayList<Barrel>(Arrays.asList(defaultBarrels.get(0))),
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+        Handgun sdp9mm = new Handgun("SDP 9mm", 47, 16, new ArrayList<Sight>(Arrays.asList(defaultSights.get(0))),
+                defaultUnderBarrels, defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0))), 1);
+
+        // Machine pistols
+        MachinePistol smg11 = new MachinePistol("SMG-11", 35, 16, defaultSights, defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 1270);
+        MachinePistol bearing9 = new MachinePistol("Bearing 9", 33, 25, defaultSights, defaultUnderBarrels,
+                defaultBarrels, new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 1100);
+        MachinePistol smg12 = new MachinePistol("SMG-12", 28, 32, defaultSights, defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 1270);
+        MachinePistol cz = new MachinePistol("C75 Auto", 35, 26, defaultSights, defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 1000);
+        MachinePistol spsmg9 = new MachinePistol("SPSMG9", 33, 20, defaultSights, defaultUnderBarrels, defaultBarrels,
+                new ArrayList<Grip>(Arrays.asList(defaultGrips.get(0), defaultGrips.get(1))), 980);
     }
 }
