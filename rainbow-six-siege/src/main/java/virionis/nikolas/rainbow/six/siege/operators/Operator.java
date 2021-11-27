@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import virionis.nikolas.rainbow.six.siege.gadgets.*;
 import virionis.nikolas.rainbow.six.siege.weapons.*;
 
-public class Operator implements IOperator {
+public abstract class Operator {
 
     private String name;
     private String unit;
@@ -27,7 +27,7 @@ public class Operator implements IOperator {
             ArrayList<Weapon> secondaryWeaponOptions,
             ArrayList<Gadget> gadgetOptions, Character side) {
         this.name = name;
-        this.unit = unit;
+        this.setUnit(unit);
         this.maxHp = maxHp;
         this.hp = maxHp;
         this.health = health;
@@ -36,6 +36,14 @@ public class Operator implements IOperator {
         this.secondaryWeaponOptions = secondaryWeaponOptions;
         this.gadgetOptions = gadgetOptions;
         this.side = side;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public String getName() {
@@ -86,52 +94,28 @@ public class Operator implements IOperator {
         return side;
     }
 
-    @Override
     public void walk(Character direction, Integer speed) {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void sprint(Character direction, Integer speed) {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void crouch() {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void prone() {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void shoot(Boolean hit, Operator target) {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void getShot(Integer damage) {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void ads(Integer speed) {
-        // TODO Auto-generated method stub
-
     }
 
-    @Override
     public void unAds(Integer speed) {
-        // TODO Auto-generated method stub
-
     }
 
 }

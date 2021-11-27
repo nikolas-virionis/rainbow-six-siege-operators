@@ -1,6 +1,6 @@
 package virionis.nikolas.rainbow.six.siege.gadgets;
 
-public class Gadget {
+public abstract class Gadget {
     private String name;
     private Integer maxQuantity;
 

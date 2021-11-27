@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import virionis.nikolas.rainbow.six.siege.attachments.*;
 
-public class Weapon implements IWeapon {
+public abstract class Weapon {
 
     private String name;
     private Integer damage;
@@ -73,22 +73,18 @@ public class Weapon implements IWeapon {
         return adsTime;
     }
 
-    @Override
     public void shoot() {
 
     }
 
-    @Override
     public void aim() {
 
     }
 
-    @Override
     public Integer checkMagazine() {
         return -1;
     }
 
-    @Override
     public void reload() {
 
     }

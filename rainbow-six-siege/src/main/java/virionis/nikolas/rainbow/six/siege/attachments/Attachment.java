@@ -1,6 +1,6 @@
 package virionis.nikolas.rainbow.six.siege.attachments;
 
-public class Attachment {
+public abstract class Attachment {
     private String name;
 
     public Attachment(String name) {
